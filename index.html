@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windy City Movers | Chicago's Trusted Moving Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🏙️</span>
+                <span class="logo-text">Windy City Movers</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#quote">Get a Quote</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="tel:312555MOVE" class="btn btn-primary">📞 (312) 555-MOVE</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="chicago-skyline"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Moving Chicago<br><span class="highlight">Since 1995</span></h1>
+                <p class="hero-subtitle">Professional, reliable, and stress-free moving services for the Windy City and beyond.</p>
+                <div class="hero-cta">
+                    <a href="#quote" class="btn btn-large btn-primary">Get Free Quote</a>
+                    <a href="#services" class="btn btn-large btn-outline">Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">28+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Moves Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Customer Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chicago-flag-stripes">
+            <div class="stripe stripe-blue"></div>
+            <div class="stripe stripe-white"></div>
+            <div class="stripe stripe-blue"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our Moving Services</h2>
+                <p class="section-subtitle">From downtown high-rises to suburban homes, we've got Chicago covered.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Local Moves</h3>
+                    <p>Moving within Chicago? Our local team knows every neighborhood, from Lincoln Park to Hyde Park. Same-day service available.</p>
+                    <a href="#quote" class="service-link">Get Local Quote →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚛</div>
+                    <h3>Long Distance</h3>
+                    <p>Leaving Chicago? We handle interstate moves with care. Fully licensed and insured for moves across the country.</p>
+                    <a href="#quote" class="service-link">Get Long Distance Quote →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Packing Services</h3>
+                    <p>Don't lift a finger. Our professional packers use premium materials to protect your belongings from start to finish.</p>
+                    <a href="#quote" class="service-link">Add Packing →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Storage Solutions</h3>
+                    <p>Secure, climate-controlled storage facilities in Chicago. Short-term and long-term options available.</p>
+                    <a href="#quote" class="service-link">View Storage →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏬</div>
+                    <h3>Commercial Moving</h3>
+                    <p>Office relocations, retail moves, warehouse transfers. Minimize downtime with our business-focused moving team.</p>
+                    <a href="#quote" class="service-link">Business Quote →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎹</div>
+                    <h3>Specialty Items</h3>
+                    <p>Pianos, antiques, artwork, pool tables. Our specialists handle your most precious items with expert care.</p>
+                    <a href="#quote" class="service-link">Specialty Quote →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Calculator Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <div class="quote-wrapper">
+                <div class="quote-info">
+                    <span class="section-tag">Estimate</span>
+                    <h2>Get Your Free Moving Quote</h2>
+                    <p>Answer a few quick questions and we'll provide an instant estimate. No hidden fees, no surprises.</p>
+                    <ul class="quote-features">
+                        <li>✓ Instant online estimate</li>
+                        <li>✓ Binding quotes available</li>
+                        <li>✓ Price match guarantee</li>
+                        <li>✓ No obligation</li>
+                    </ul>
+                </div>
+                <div class="quote-calculator">
+                    <form id="quoteForm" class="quote-form">
+                        <div class="form-group">
+                            <label for="moveType">Type of Move</label>
+                            <select id="moveType" name="moveType" required>
+                                <option value="">Select move type...</option>
+                                <option value="local">Local Move (within Chicago)</option>
+                                <option value="longdistance">Long Distance</option>
+                                <option value="commercial">Commercial/Business</option>
+                                <option value="storage">Storage Only</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fromZip">Moving From (ZIP)</label>
+                                <input type="text" id="fromZip" name="fromZip" placeholder="60601" pattern="[0-9]{5}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="toZip">Moving To (ZIP)</label>
+                                <input type="text" id="toZip" name="toZip" placeholder="60614" pattern="[0-9]{5}" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="homeSize">Home Size</label>
+                            <select id="homeSize" name="homeSize" required>
+                                <option value="">Select size...</option>
+                                <option value="studio">Studio Apartment</option>
+                                <option value="1bed">1 Bedroom</option>
+                                <option value="2bed">2 Bedroom</option>
+                                <option value="3bed">3 Bedroom</option>
+                                <option value="4bed">4+ Bedroom</option>
+                                <option value="office">Office/Commercial</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Additional Services</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="packing">
+                                    <span class="checkmark"></span>
+                                    Full Packing Service
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="storage">
+                                    <span class="checkmark"></span>
+                                    Storage Needed
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="supplies">
+                                    <span class="checkmark"></span>
+                                    Packing Supplies
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="specialty">
+                                    <span class="checkmark"></span>
+                                    Specialty Items (piano, etc.)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="moveDate">Preferred Move Date</label>
+                            <input type="date" id="moveDate" name="moveDate" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Calculate My Quote</button>
+                    </form>
+                    <div id="quoteResult" class="quote-result hidden">
+                        <div class="result-header">
+                            <h3>Your Estimated Quote</h3>
+                            <span class="estimate-range" id="estimateRange">$450 - $650</span>
+                        </div>
+                        <p class="estimate-note">This is a preliminary estimate. Final pricing may vary based on inventory and access conditions.</p>
+                        <button class="btn btn-secondary btn-full" onclick="bookMove()">Book My Move</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2>Chicago Born. Chicago Proud.</h2>
+                    <p>Windy City Movers has been serving the Chicago metropolitan area since 1995. What started as a single truck operation has grown into one of the most trusted moving companies in Illinois.</p>
+                    <p>We know Chicago. From navigating the tight streets of Old Town to coordinating high-rise moves in the Loop, our team has the local expertise to handle any challenge.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Fully Licensed & Insured</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Background-Checked Crews</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>No Hidden Fees</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Damage Protection Included</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>🏙️</span>
+                        <p>Serving Chicago Since 1995</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Chicago Says About Us</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Windy City Movers made our move from Wicker Park to Logan Square completely stress-free. The crew was professional, fast, and took great care of our furniture."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>Chicago, IL</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best moving experience I've ever had. They navigated our 4th floor walk-up like pros. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <strong>James K.</strong>
+                        <span>Lincoln Park, Chicago</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"We used them for our office relocation downtown. Minimal downtime, professional team, excellent communication throughout."</p>
+                    <div class="testimonial-author">
+                        <strong>Amanda R.</strong>
+                        <span>Business Owner, The Loop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2>Ready to Move?</h2>
+                    <p>Get in touch with our team. We're here to answer your questions and help plan your perfect move.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:3125556683">(312) 555-MOVE</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info@windycitymovers.com">info@windycitymovers.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Address</strong>
+                                <span>123 Michigan Avenue<br>Chicago, IL 60601</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Mon-Sat: 7AM - 7PM<br>Sun: 9AM - 5PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Phone</label>
+                                <input type="tel" id="contactPhone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="chicago-flag-stripes footer-stripes">
+            <div class="stripe stripe-blue"></div>
+            <div class="stripe stripe-white"></div>
+            <div class="stripe stripe-blue"></div>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🏙️</span>
+                        <span class="logo-text">Windy City Movers</span>
+                    </div>
+                    <p>Chicago's trusted moving partner since 1995. Professional, reliable, and committed to making your move stress-free.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Yelp">⭐</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Local Moves</a></li>
+                        <li><a href="#services">Long Distance</a></li>
+                        <li><a href="#services">Packing Services</a></li>
+                        <li><a href="#services">Storage</a></li>
+                        <li><a href="#services">Commercial Moving</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Areas Served</h4>
+                    <ul>
+                        <li>Chicago, IL</li>
+                        <li>Evanston, IL</li>
+                        <li>Oak Park, IL</li>
+                        <li>Schaumburg, IL</li>
+                        <li>Naperville, IL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Windy City Movers. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
